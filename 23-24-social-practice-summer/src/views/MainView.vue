@@ -1,28 +1,38 @@
 <template>
-  <el-container class="main-pic">
-    <img src="../assets/main-pic/01.jpg" alt="" class="main-pic" />
-  </el-container>
-  <el-container class="uni-history">
-    <el-container class="uni-pic"> </el-container>
-    <el-container class="uni-word">
-      <p>南京大学具有非常悠久的历史</p>
+  <div>
+    <el-container class="main-pic">
+      <img src="../assets/main-pic/01.jpg" alt="" class="main-pic" />
     </el-container>
-  </el-container>
-  <el-container class="introduction">
-    <el-container class="map">
-      <el-button @click="getMessage(0)" type="primary"> 南京 </el-button>
-      <el-button @click="getMessage(1)" type="primary"> 上海 </el-button>
-      <el-button @click="getMessage(2)" type="primary"> 北京 </el-button>
-      <el-button @click="getMessage(3)" type="primary"> 武汉 </el-button>
-      地图
+    <el-container class="uni-history">
+      <el-container class="uni-pic"> </el-container>
+      <el-container class="uni-word">
+        <p>南京大学具有非常悠久的历史</p>
+      </el-container>
     </el-container>
-    <el-container class="result">
-      <el-container class="concrete-content" v-if="isVisible[0]"> 南京 </el-container>
-      <el-container class="concrete-content" v-if="isVisible[1]"> 上海 </el-container>
-      <el-container class="concrete-content" v-if="isVisible[2]"> 北京 </el-container>
-      <el-container class="concrete-content" v-if="isVisible[3]"> 武汉</el-container>
+    <el-container class="introduction">
+      <el-container class="map">
+        <el-button @click="getMessage(0)" type="primary"> 南京 </el-button>
+        <el-button @click="getMessage(1)" type="primary"> 上海 </el-button>
+        <el-button @click="getMessage(2)" type="primary"> 北京 </el-button>
+        <el-button @click="getMessage(3)" type="primary"> 武汉 </el-button>
+        地图
+      </el-container>
+      <el-container class="result">
+        <el-container class="concrete-content" v-if="isVisible[0]">
+          南京
+        </el-container>
+        <el-container class="concrete-content" v-if="isVisible[1]">
+          上海
+        </el-container>
+        <el-container class="concrete-content" v-if="isVisible[2]">
+          北京
+        </el-container>
+        <el-container class="concrete-content" v-if="isVisible[3]">
+          武汉</el-container
+        >
+      </el-container>
     </el-container>
-  </el-container>
+  </div>
 </template>
 
 <script>
