@@ -1,8 +1,7 @@
 .DS_Store
 node_modules
 /dist
-
-
+src/assets/presentationView/南京/中山码头 调研视频.mp4
 # local env files
 .env.local
 .env.*.local
