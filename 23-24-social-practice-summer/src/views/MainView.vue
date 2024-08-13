@@ -7,7 +7,11 @@
     />
     <el-container class="uni-history">
       <el-container class="uni-pic">
-        <img src="../assets/mainView/uni-history/南京.jpg" alt="南京" style="height:100%" />
+        <img
+          src="../assets/mainView/uni-history/南京.jpg"
+          alt="南京"
+          style="height: 100%"
+        />
       </el-container>
       <el-container class="uni-word">
         <p>
@@ -116,7 +120,6 @@
       </el-container>
     </el-container>
   </div>
-  </div>
 </template>
 
 <script>
@@ -165,7 +168,7 @@ export default {
   margin: 40px;
   width: 280px;
   height: 420px;
-  }
+}
 .uni-word {
   display: flex;
   justify-content: center;
@@ -181,7 +184,7 @@ p {
 }
 .uni-word p {
   font-size: xx-large;
-  color: white;;
+  color: white;
 }
 .introduction {
   display: flex;
