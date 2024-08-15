@@ -87,10 +87,16 @@ nav .nav-box {
   margin-right: 100px;
 }
 .drop-content {
-  background-color: purple;
+  width: 160px;
+  margin-left: -42px;
+  background-color:purple;
   display: none;
   position: absolute;
   flex-direction: column;
+}
+.drop-content a {
+  width: 160px;
+  margin-top:10px;
 }
 .drop-content a:hover {
   background: black;

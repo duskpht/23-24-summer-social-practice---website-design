@@ -7,6 +7,11 @@
       <router-link to="/result/archive">档案汇编</router-link>
     </el-container>
     <el-container class="content">
+      <el-container class="his-word">
+        <p>
+          线下调研过程中，团队于各地档案馆检索出近两万份档案，内容极为丰富，全面再现两校西迁的方方面面，但受限于客观因素，仅整理带回部分档案，以下罗列部分，若需了解更多信息，请联系南京大学档案馆。
+        </p>
+      </el-container>
       <el-table :data="JinLingData" class="table">
         <el-table-column prop="account" label="档案号" width="350px" />
         <el-table-column prop="name" label="题名" width="600px" />
@@ -630,7 +635,6 @@ a:hover {
 }
 .table {
   border-collapse: collapse;
-
   margin-top: 30px;
   font-size: large;
   font-family: "华文中宋";
@@ -642,5 +646,18 @@ a:hover {
 }
 .table tr {
   border: 1px solid;
+}
+.his-word {
+  margin-top: 30px;
+  width: 1000px;
+  height: 150px;
+  border: 1px solid;
+  background-image: url("../../assets/historyDictation/2.png");
+  background-size: cover;
+}
+.his-word p {
+  font-family: "华文中宋";
+  font-size: x-large;
+  text-indent: 2em;
 }
 </style>

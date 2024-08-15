@@ -183,7 +183,7 @@ a:hover {
   color: black;
 }
 .content {
-  margin-left: 200px;
+  margin-left: 300px;
   width: 1100px;
   align-items: center;
 }

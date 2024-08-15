@@ -25,7 +25,7 @@
       alt="部分中国地图"
       class="china-map"
     />
-    <h2>西迁路线图</h2>
+    <h2>西迁路线图(待补充)</h2>
     <el-container class="introduction">
       <el-container class="map-nav">
         <el-button @click="getMessage(0)" type="primary"> 南京 </el-button>
