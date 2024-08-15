@@ -4,33 +4,63 @@
       <span class="header_title">西迁图书馆</span>
     </div>
     <nav>
-      <router-link to="/">首页</router-link>
-      <div class="dropdown">
-        <div class="drop-text">项目展示</div>
-        <div class="drop-content">
-          <router-link to='/chengdu'>成都</router-link>
-          <router-link to='/wuhan'>武汉</router-link>
-          <router-link to='/nanjing'>南京</router-link>
-          <router-link to='/yichang'>宜昌</router-link>
-          <router-link to='/jiujiang'>九江</router-link>
-          <router-link to='/chongqing'>重庆</router-link>
+      <el-container class="nav-box">
+        <router-link to="/">首页</router-link>
+      </el-container>
+      <el-container class="nav-box">
+        <div class="dropdown">
+          <div class="drop-text">调研风采</div>
+          <div class="drop-content">
+            <router-link to="/research/nanjing">南京</router-link>
+            <router-link to="/research/jiujiang">九江</router-link>
+            <router-link to="/research/wuhan">武汉</router-link>
+            <router-link to="/research/yichang">宜昌</router-link>
+            <router-link to="/research/chongqing">重庆</router-link>
+            <router-link to="/research/chengdu">成都</router-link>
+          </div>
         </div>
-      </div>
-      <router-link to="/footprint">西迁足迹</router-link>
-      <router-link to="/memory">我的记忆</router-link>
+      </el-container>
+      <el-container class="nav-box">
+        <div class="dropdown">
+          <div class="drop-text">调研结果</div>
+          <div class="drop-content">
+            <router-link to="/result/regional">地域风物</router-link>
+            <router-link to="/result/history">口述历史</router-link>
+            <router-link to="/result/compilation">史料汇编</router-link>
+            <router-link to="/result/archive">档案汇编</router-link>
+          </div>
+        </div>
+      </el-container>
+      <el-container class="nav-box">
+        <router-link to="/footprint">西迁足迹</router-link>
+      </el-container>
+      <el-container class="nav-box">
+        <router-link to="/memory">我的记忆</router-link>
+      </el-container>
     </nav>
 
     <router-view />
-    <div class="link">底部链接暂无</div>
+    <div class="link">
+      <el-container class="links">
+        <a href="https://historymuseum.nju.edu.cn/">南京大学校史博物馆</a>
+        <a href="https://dawww.nju.edu.cn/">南京大学档案馆</a>
+        <a href="https://www.nju.edu.cn/">南京大学</a>
+        <a href="https://tuanwei.nju.edu.cn/">南京大学校团委</a>
+      </el-container>
+      <el-container class="info">
+        <p>地址：江苏省南京市栖霞区仙林大道163号</p>
+        <p>邮编：210023</p>
+        <p>联系电话：18260048834</p>
+      </el-container>
+    </div>
   </div>
 </template>
 <script>
 export default {
   data() {
-    return {
-    }
-  }
-}
+    return {};
+  },
+};
 </script>
 
 <style lang="scss">
@@ -39,35 +69,47 @@ nav {
   margin: 10xp;
   font-size: large;
   font-family: "华文中宋";
-  background-color: aqua;
+  background-color: purple;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   gap: 30px;
   font-weight: bold;
+  color: white;
   a {
-    color: black;
-    &.router-link-exact-active {
-      color: purple;
-    }
+    text-decoration: none;
+    color: white;
   }
+}
+nav .nav-box {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .drop-content {
+  background-color: purple;
   display: none;
   position: absolute;
-  width: 80px;
   flex-direction: column;
-  a {
-    text-align: center;
-    width: 80px;
-  }
 }
 .drop-content a:hover {
-  background: white;
-  color: black;
+  background: black;
+  color: white;
 }
-.dropdown:hover .drop-content{
+.dropdown:hover .drop-content {
   display: flex;
+  .city {
+    display: none;
+  }
+  .citys:hover .city {
+    display: flex;
+  }
+}
+.citys {
+  width: 80px;
+  .city {
+    width: 160px;
+  }
 }
 .home_header {
   width: 100%;
@@ -84,10 +126,34 @@ nav {
   font-family: "华文中宋";
 }
 .link {
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   font-family: "华文中宋";
   margin-top: 35px;
   width: 100%;
   height: 200px;
+  color: white;
   background-color: purple;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.links {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  a {
+    margin-top: 15px;
+  }
+  a:hover {
+    background-color: white;
+    color: black;
+  }
+}
+.info {
+  margin-left: 40%;
 }
 </style>

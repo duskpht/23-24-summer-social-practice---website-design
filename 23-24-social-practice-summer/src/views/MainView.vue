@@ -19,21 +19,28 @@
         </p>
       </el-container>
     </el-container>
+    <h2>南大校史</h2>
+    <img
+      src="../assets/mainView/introduction/中国（部分）.png"
+      alt="部分中国地图"
+      class="china-map"
+    />
+    <h2>西迁路线图</h2>
     <el-container class="introduction">
       <el-container class="map-nav">
-        <el-button @click="getMessage(0)" type="primary"> 成都 </el-button>
+        <el-button @click="getMessage(0)" type="primary"> 南京 </el-button>
         <el-button @click="getMessage(1)" type="primary"> 九江 </el-button>
-        <el-button @click="getMessage(2)" type="primary"> 南京 </el-button>
-        <el-button @click="getMessage(3)" type="primary"> 武汉 </el-button>
-        <el-button @click="getMessage(4)" type="primary"> 宜昌 </el-button>
-        <el-button @click="getMessage(5)" type="primary"> 重庆 </el-button>
+        <el-button @click="getMessage(2)" type="primary"> 武汉 </el-button>
+        <el-button @click="getMessage(3)" type="primary"> 宜昌 </el-button>
+        <el-button @click="getMessage(4)" type="primary"> 重庆 </el-button>
+        <el-button @click="getMessage(5)" type="primary"> 成都 </el-button>
       </el-container>
       <el-container class="map">
         <el-container class="concrete-content" v-if="isVisible[0]">
           <img
-            src="../assets/mainView/introduction/成都.jpg"
-            alt="成都"
-            style="width: 100%"
+            src="../assets/mainView/introduction/南京.jpg"
+            alt="南京"
+            style="height: 100%"
           />
         </el-container>
         <el-container class="concrete-content" v-if="isVisible[1]">
@@ -45,29 +52,29 @@
         </el-container>
         <el-container class="concrete-content" v-if="isVisible[2]">
           <img
-            src="../assets/mainView/introduction/南京.jpg"
-            alt="南京"
-            style="height: 100%"
-          />
-        </el-container>
-        <el-container class="concrete-content" v-if="isVisible[3]">
-          <img
             src="../assets/mainView/introduction/武汉.png"
             alt="武汉"
             style="width: 100%"
           />
         </el-container>
-        <el-container class="concrete-content" v-if="isVisible[4]">
+        <el-container class="concrete-content" v-if="isVisible[3]">
           <img
             src="../assets/mainView/introduction/宜昌.jpg"
             alt="宜昌"
             style="width: 100%"
           />
         </el-container>
-        <el-container class="concrete-content" v-if="isVisible[5]">
+        <el-container class="concrete-content" v-if="isVisible[4]">
           <img
             src="../assets/mainView/introduction/重庆.png"
             alt="重庆"
+            style="width: 100%"
+          />
+        </el-container>
+        <el-container class="concrete-content" v-if="isVisible[5]">
+          <img
+            src="../assets/mainView/introduction/成都.jpg"
+            alt="成都"
             style="width: 100%"
           />
         </el-container>
@@ -75,7 +82,7 @@
       <el-container class="result">
         <el-container class="concrete-content" v-if="isVisible[0]">
           <p>
-            成都，巴山蜀水，天府之国，人杰地灵，群英荟萃。自古便是华夏腹地的成都，是我国抗战时期真正的大后方。金陵大学辗转三月后终抵成都，开始了战时后方高等教育建设的峥嵘岁月。金大主校区与华西大学等五校共享，校舍则增设于红瓦巷、金陵路等地。团队走访上述地点，收获千余份电子档案与民国时期纸质档案，于今昔对比中感悟历史。
+            南京是两校旧址所在与西迁起点，也是本次团队寻访起点。寻脉向西，厘清西迁往事，鉴往而知来。金陵大学旧址所在现为南京大学鼓楼校区，国立中央大学旧址则位于今东南大学四牌楼校区。团队于两地拍摄实景照片，并在中山码头采访游客与工作人员。在今夕对比中感悟历史变迁，深情回望西迁历史足迹。
           </p>
         </el-container>
         <el-container class="concrete-content" v-if="isVisible[1]">
@@ -85,26 +92,27 @@
         </el-container>
         <el-container class="concrete-content" v-if="isVisible[2]">
           <p>
-            南京是两校旧址所在与西迁起点，也是本次团队寻访起点。寻脉向西，厘清西迁往事，鉴往而知来。金陵大学旧址所在现为南京大学鼓楼校区，国立中央大学旧址则位于今东南大学四牌楼校区。团队于两地拍摄实景照片，并在中山码头采访游客与工作人员。在今夕对比中感悟历史变迁，深情回望西迁历史足迹。
+            1937年，烽火连天，硝烟弥漫。金大急需寻找相对安全的地方暂时安置师生，武汉成为金大师生暂时停留的理想之地，师生在此驻足一月有余。与此同时，国立中央大学的学生或在此办理入学，或沿江继续向前。调研过程中，团队先后前往华中师范大学佑铭体育馆、粤汉码头、德林公寓、武汉市档案馆，寻觅当年印痕。
           </p>
         </el-container>
         <el-container class="concrete-content" v-if="isVisible[3]">
           <p>
-            1937年，烽火连天，硝烟弥漫。金大急需寻找相对安全的地方暂时安置师生，武汉成为金大师生暂时停留的理想之地，师生在此驻足一月有余。与此同时，国立中央大学的学生或在此办理入学，或沿江继续向前。调研过程中，团队先后前往华中师范大学佑铭体育馆、粤汉码头、德林公寓、武汉市档案馆，寻觅当年印痕。
+            宜昌，素有“川鄂咽喉”之称，历来是兵家必争之地。全面抗战开始后，宜昌是四川抗战基地的东大门、民众和物资转运的要道。宜昌大撤退由卢作孚先生亲自安排，短时间内完成大量人员物资转运，最大限度保存实力，被誉为“东方的敦刻尔克大撤退”。团队在此考察宜昌市图书馆、宜昌市档案馆、宜昌九码头、宜昌大撤退纪念园及红星路等地。
           </p>
         </el-container>
         <el-container class="concrete-content" v-if="isVisible[4]">
           <p>
-            宜昌，素有“川鄂咽喉”之称，历来是兵家必争之地。全面抗战开始后，宜昌是四川抗战基地的东大门、民众和物资转运的要道。宜昌大撤退由卢作孚先生亲自安排，短时间内完成大量人员物资转运，最大限度保存实力，被誉为“东方的敦刻尔克大撤退”。团队在此考察宜昌市图书馆、宜昌市档案馆、宜昌九码头、宜昌大撤退纪念园及红星路等地。
+            重庆，是国立中央大学的西迁终点，亦是金陵大学西迁途中的最后一站。国立中央大学最终暂驻于重庆大学校园一隅继续办学，磐溪、西南大学校园中亦有当年校舍遗迹。团队走访了重庆市档案馆、磐溪、重庆大学及西南大学。在重庆大学，龙灏教授带领我们一路参观走访校园，讲解历史。大部分遗迹留存至今，石砖斑驳，树木茂盛，静物无言。
           </p>
         </el-container>
         <el-container class="concrete-content" v-if="isVisible[5]">
           <p>
-            重庆，是国立中央大学的西迁终点，亦是金陵大学西迁途中的最后一站。国立中央大学最终暂驻于重庆大学校园一隅继续办学，磐溪、西南大学校园中亦有当年校舍遗迹。团队走访了重庆市档案馆、磐溪、重庆大学及西南大学。在重庆大学，龙灏教授带领我们一路参观走访校园，讲解历史。大部分遗迹留存至今，石砖斑驳，树木茂盛，静物无言。
+            成都，巴山蜀水，天府之国，人杰地灵，群英荟萃。自古便是华夏腹地的成都，是我国抗战时期真正的大后方。金陵大学辗转三月后终抵成都，开始了战时后方高等教育建设的峥嵘岁月。金大主校区与华西大学等五校共享，校舍则增设于红瓦巷、金陵路等地。团队走访上述地点，收获千余份电子档案与民国时期纸质档案，于今昔对比中感悟历史。
           </p>
         </el-container>
       </el-container>
     </el-container>
+    <h2>西迁简介</h2>
     <el-container class="propagation">
       <el-container class="pic-link">
         图片1
@@ -119,6 +127,7 @@
         <a href="https://www.bilibili.com/">B站</a>
       </el-container>
     </el-container>
+    <h2>宣传链接</h2>
   </div>
 </template>
 
@@ -219,18 +228,23 @@ p {
   margin-right: 30px;
 }
 .result {
+  background-image: url("../assets/historyDictation/8.png");
+  background-size: cover;
   margin-left: 15px;
   margin-right: 0;
   width: 33%;
   height: 100%;
+  color: black;
 }
+
 .concrete-content {
   width: 100%;
   height: 100%;
 }
 .concrete-content p {
+  align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 22px;
 }
 .propagation {
   display: flex;
@@ -258,5 +272,14 @@ p {
 a {
   text-align: center;
   margin: 30px;
+}
+.china-map {
+  margin-top: 30px;
+  margin-left: 300px;
+}
+h2 {
+  font-family: "华文中宋";
+  font-size: x-large;
+  text-align: center;
 }
 </style>

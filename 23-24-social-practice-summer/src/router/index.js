@@ -3,40 +3,70 @@ import { createRouter, createWebHistory } from "vue-router";
 const MainView = () => import("../views/MainView.vue");
 const FootprintView = () => import("../views/FootprintView.vue");
 const MemoryView = () => import("../views/MemoryView.vue");
-const NanjingView = () => import("../views/presentation/NanjingView.vue");
-const WuhanView = () => import("../views/presentation/WuhanView.vue");
-const YichangView = () => import("../views/presentation/YichangView.vue");
-const ChongqingView = () => import("../views/presentation/ChongqingView.vue");
-const JiujiangView = () => import("../views/presentation/JiujiangView.vue");
-const ChengduView = () => import("../views/presentation/ChengduView.vue");
+const ResearchNanjingView = () =>
+  import("../views/Research demeanor/NanjingView.vue");
+const ResearchWuhanView = () =>
+  import("../views/Research demeanor/WuhanView.vue");
+const ResearchYichangView = () =>
+  import("../views/Research demeanor/YichangView.vue");
+const ResearchChongqingView = () =>
+  import("../views/Research demeanor/ChongqingView.vue");
+const ResearchJiujiangView = () =>
+  import("../views/Research demeanor/JiujiangView.vue");
+const ResearchChengduView = () =>
+  import("../views/Research demeanor/ChengduView.vue");
+const ResultRegioanlView = () =>
+  import("../views/Research result/RegionalView.vue");
+const ResultCompilationView = () =>
+  import("../views/Research result/CompilationView.vue");
+const ResultHistoryView = () =>
+  import("../views/Research result/HistoryView.vue");
+const ResultArchivelView = () =>
+  import("../views/Research result/ArchiveView.vue");
 const routes = [
   {
     path: "/",
     component: MainView,
   },
   {
-    path: "/nanjing",
-    component: NanjingView,
+    path: "/research/nanjing",
+    component: ResearchNanjingView,
   },
   {
-    path: "/wuhan",
-    component: WuhanView,
+    path: "/research/wuhan",
+    component: ResearchWuhanView,
   },
   {
-    path: "/yichang",
-    component: YichangView,
+    path: "/research/yichang",
+    component: ResearchYichangView,
   },
   {
-    path: "/chongqing",
-    component: ChongqingView,
+    path: "/research/chongqing",
+    component: ResearchChongqingView,
   },
   {
-    path: "/jiujiang",
-    component: JiujiangView,
+    path: "/research/jiujiang",
+    component: ResearchJiujiangView,
   },
   {
-    path: "/chengdu",
-    component: ChengduView,
+    path: "/research/chengdu",
+    component: ResearchChengduView,
+  },
+  {
+    path: "/result/regional",
+    component: ResultRegioanlView,
+  },
+  {
+    path: "/result/archive",
+    component: ResultArchivelView,
+  },
+  {
+    path: "/result/compilation",
+    component: ResultCompilationView,
+  },
+  {
+    path: "/result/history",
+    component: ResultHistoryView,
   },
   {
     path: "/footprint",
