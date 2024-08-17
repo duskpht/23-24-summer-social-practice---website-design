@@ -89,14 +89,14 @@ nav .nav-box {
 .drop-content {
   width: 160px;
   margin-left: -42px;
-  background-color:purple;
+  background-color: purple;
   display: none;
   position: absolute;
   flex-direction: column;
 }
 .drop-content a {
   width: 160px;
-  margin-top:10px;
+  margin-top: 10px;
 }
 .drop-content a:hover {
   background: black;
@@ -118,9 +118,10 @@ nav .nav-box {
   }
 }
 .home_header {
+  color: white;
+  background-color: purple;
   width: 100%;
   height: 40px;
-  border-bottom: 1px solid gainsboro;
   display: flex;
 }
 
