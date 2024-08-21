@@ -66,8 +66,8 @@ export default {
 <style lang="scss">
 nav {
   height: 60px;
-  margin: 10xp;
-  font-size: large;
+  //margin: 10xp;
+  font-size: x-large;
   font-family: "华文中宋";
   background-color: purple;
   display: flex;
@@ -119,9 +119,9 @@ nav .nav-box {
 }
 .home_header {
   color: white;
-  background-color: purple;
+  background-color: rgb(95, 5, 95);
   width: 100%;
-  height: 40px;
+  height: 100px;
   display: flex;
 }
 
