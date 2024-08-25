@@ -115,16 +115,54 @@
     <h2>西迁简介</h2>
     <el-container class="propagation">
       <el-container class="pic-link">
-        图片1
-        <a href="www.baidu.com">百度</a>
+        <img
+          src="../assets/mainView/propagation/三峡日报.png"
+          alt="三峡日报"
+          style="height: 200px"
+        />
+        <h2>“金陵大学西迁”调研活动走进宜昌——三峡日报</h2>
+        <a
+          href="https://nginx-sxrmtzx.sxrmapp.cn3x.com.cn/sxrmtzx/site1/mweb/202408/19/c661800.html"
+          >三峡日报</a
+        >
       </el-container>
       <el-container class="pic-link">
-        图片2
-        <a href="www.baidu.com">百度</a>
+        <img
+          src="../assets/mainView/propagation/重庆晨报.png"
+          alt="重庆晨报"
+          style="height: 200px"
+        />
+        <h2>南京大学学生再走“西迁路” 感悟“西迁”光辉史——重庆晨报</h2>
+        <a href="https://chinacqsb.com/">重庆日报</a>
       </el-container>
       <el-container class="text-link">
-        <a href="www.baidu.com">百度</a>
-        <a href="https://www.bilibili.com/">B站</a>
+        <a href="https://mp.weixin.qq.com/s/qroIb4FtbFXA1G6CURXkTA"
+          >向西•古都启程 | 中山码头：风雨飘摇之际的温情港湾</a
+        >
+        <a href="https://mp.weixin.qq.com/s/WDPugPPtm1yXam2_yPy6LA"
+          >向西•江畔停泊|九江：长江之畔的文化驿站</a
+        >
+        <a href="https://mp.weixin.qq.com/s/-GIMocnQvmDUHb4UvBrx8A"
+          >向西•江城记忆 | 武汉：楚汉风韵与江城变迁</a
+        >
+        <a href="https://mp.weixin.qq.com/s/36203Yk_nzuELR_5eDIrDQ"
+          >向西•东方的敦刻尔克大撤退 | 宜昌：险象环生的川鄂门户</a
+        >
+        <a href="https://mp.weixin.qq.com/s/_uHPxlTuWEU6SIw5Pz457A"
+          >向西•山城灯火(上) | 重庆：立体都市的社会实践画卷</a
+        >
+        <a href="https://mp.weixin.qq.com/s/01TKEzBx2Nn7AjmN5VBvbQ"
+          >向西•山城灯火(中) |
+          寻根问脉，共话时代：南京大学学子在重庆大学重温西迁精神</a
+        >
+        <a href="https://mp.weixin.qq.com/s/mp6o2QpSv8xnNldUaPjSIQ"
+          >向西•山城灯火(下) |
+          穿越时光的航迹：南京大学学子探寻民生公司与西迁记忆</a
+        >
+        <a href="https://mp.weixin.qq.com/s/K6ctvN_DH9bQjAB1cak5-A"
+          >向西•天府之国 | 成都：慢生活下的社会实践探索</a
+        >
+        <h2>公众号链接</h2>
       </el-container>
     </el-container>
     <h2>宣传链接</h2>
@@ -154,8 +192,10 @@ export default {
 
 <style scoped>
 .all {
-  background-image: url();
+  background-image: url("../assets/MyMemory/背景3.jpg");
   background-size: cover;
+  background-position: center; /* 背景图片居中显示 */
+  background-attachment: fixed; /* 背景图片固定，不随滚动条滚动 */
 }
 .main-pic {
   margin-top: 15px;
@@ -254,22 +294,42 @@ p {
   margin-top: 30px;
   width: 1200px;
   height: 500px;
-  border: 1px solid;
-  background-color: aqua;
 }
 .pic-link,
 .text-link {
   display: flex;
   flex-direction: column;
   margin: 30px;
-  border: 1px solid;
   width: 350px;
   height: 440px;
+}
+.pic-link img {
+  margin-top: 30px;
+}
+.pic-link a {
+  font-size: large;
+  color: #000;
+}
+.pic-link a:hover {
+  color: white;
+  background-color: #000;
+}
+.pic-link h2 {
+  font-size: 20px;
 }
 .text-link {
   justify-content: center;
 }
+.text-link a {
+  margin: 10px;
+  color: blue;
+}
+.text-link a:hover {
+  color: white;
+  background-color: #000;
+}
 a {
+  text-decoration: none;
   text-align: center;
   margin: 30px;
 }

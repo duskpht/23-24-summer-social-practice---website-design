@@ -66,6 +66,10 @@
 <style scoped>
 .all {
   display: flex;
+  background-image: url("../../assets/MyMemory/背景3.jpg");
+  background-size: cover; /* 确保背景图片覆盖整个元素 */
+  background-position: center; /* 背景图片居中显示 */
+  background-attachment: fixed; /* 背景图片固定，不随滚动条滚动 */
 }
 .nav-index {
   position: fixed;

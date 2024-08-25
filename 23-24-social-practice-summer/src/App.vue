@@ -65,8 +65,7 @@ export default {
 
 <style lang="scss">
 nav {
-  height: 60px;
-  //margin: 10xp;
+  height: 70px;
   font-size: x-large;
   font-family: "华文中宋";
   background-color: purple;
@@ -83,12 +82,11 @@ nav {
   }
 }
 nav .nav-box {
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 200px;
 }
-.drop-content {
+.drop-content { 
   width: 160px;
-  margin-left: -42px;
+  margin-left: 20px;
   background-color: purple;
   display: none;
   position: absolute;
@@ -121,14 +119,14 @@ nav .nav-box {
   color: white;
   background-color: rgb(95, 5, 95);
   width: 100%;
-  height: 100px;
+  height: 50px;
   display: flex;
 }
 
 .header_title {
   margin-left: 20px;
   margin-top: 5px;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
   font-family: "华文中宋";
 }
