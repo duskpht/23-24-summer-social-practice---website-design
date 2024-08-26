@@ -335,7 +335,7 @@ a {
 }
 .china-map {
   margin-top: 30px;
-  margin-left: 300px;
+  margin-left: 10%;
 }
 h2 {
   font-family: "华文中宋";

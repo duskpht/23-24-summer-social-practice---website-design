@@ -79,13 +79,54 @@
           重庆晨报报道了团队成员于重庆深入调研的情况。大家先后来到重庆市档案馆、卢作孚纪念馆、重庆大学校史馆、西南大学等地，寻觅西迁途中的珍贵历史，从中感受到教育的坚韧，知识的尊严，文化传承的不息脉动。以实际步伐丈量着先辈们的足迹，以满腔热血书写着新时代的奋斗华章。        </div>
     </div>
 
+
     <el-container class="title">
       调研收获
     </el-container>
+    <el-container class="text-container3">
+      <div class="image3">
+        <img
+          src="../assets/MyMemory/jxy.png"
+          alt="jxy"
+          style="width: 100%"
+        />
+      </div>
+      <div class="image3">
+        <img
+          src="../assets/MyMemory/zhd.png"
+          alt="zhd"
+          style="width: 100%"
+        />
+      </div>
 
-    <el-container class="title">
-      共创回忆
     </el-container>
+
+    <el-container class="text-container4">
+      <div class="image3">
+        <img
+          src="../assets/MyMemory/zyx.png"
+          alt="zyx"
+          style="width: 100%"
+        />
+      </div>
+      <div class="image3">
+        <img
+          src="../assets/MyMemory/wyd.png"
+          alt="wyd"
+          style="width: 100%"
+        />
+      </div>
+    </el-container>
+
+    <div class="image-text-container4">
+      <div class="text4">
+        三江肇始，二源合一，岁月不居，时节如流，不觉中，南京大学已走过百廿春秋。悠悠岁月会带走一些人，一些事，但深埋心中的珍贵回忆不曾褪色半分。我们四处寻觅散落史料，填补校史中向西征程的空白，也欢迎你在这里分享与母校相关的点点滴滴，共同为校史添几分鲜活色彩。
+<br><br>投稿邮箱：duskpht@163.com
+<br>联系电话：18260048834
+        </div>
+    </div>
+
+
   </div>
 </template>
 
@@ -102,7 +143,7 @@
 
 .title{
   font-family: "隶书";
-  font-size: 50px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,9 +155,9 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;  /*在父容器内水平居中*/ 
-  margin-top: 30px;
-  width: 1200px;
-  height: 450px;
+  margin-top: 0px;
+  width: 1000px;
+  height: 340px;
   
 }
 .image1 {
@@ -133,7 +174,7 @@
   display: flex;
   /*margin-top: 10px;*/
   font-family: "华文中宋";
-  font-size: 25px;
+  font-size: 20px;
   flex-direction: column;
   margin-left: 60px;
   width: 420px;
@@ -148,9 +189,9 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;  /*在父容器内水平居中*/ 
-  margin-top: 30px;
-  width: 1500px;
-  height: 350px;
+  margin-top: 10px;
+  width: 1000px;
+  height: 250px;
 }
 .image2 {
   display: flex;
@@ -160,7 +201,6 @@
   margin-top: 50px;
   margin-left: 3%;
   margin-right: 30px;
-
 }
 .text-container2{
   display: flex;
@@ -168,24 +208,74 @@
   justify-content: center;
   margin: 0 auto;  /*在父容器内水平居中*/ 
   margin-top: 150px;
-  width: 1500px;
+  width: 1000px;
   height: 200px;
-  margin-top: 90px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .text2 {
   font-family: "华文中宋";
-  font-size: 25px;
+  font-size: 20px;
   text-indent: 2em; 
   white-space: pre-wrap;  
-
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 400px;
   /*height: 100px;*/
   /*justify-content: center;*/
   margin: 0 auto;
-  margin-top: 0px;
+  /*margin-top: 0px;*/
 
+}
+.text-container3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;  /*在父容器内水平居中*/ 
+  margin-top: 150px;
+  width: 1150px;
+  height: 425px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.text-container4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;  /*在父容器内水平居中*/ 
+  margin-top: 150px;
+  width: 1150px;
+  height: 635px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.image3 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.image-text-container4{
+  background-image: url('../assets/MyMemory/共创回忆.png');
+  background-size: 100%;
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+}
+.text4{
+  font-family: "华文中宋";
+  color:azure;
+  font-size: 20px;
+  text-indent: 2em; 
+  white-space: pre-wrap;  
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+
+  margin-top: 110px;
+  margin-left: 350px;
 }
 </style>

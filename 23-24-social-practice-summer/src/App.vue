@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <div class="home_header">
-      <span class="header_title">西迁图书馆</span>
+      
     </div>
     <nav>
       <el-container class="nav-box">
@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss">
-nav {
+/*nav {
   height: 70px;
   font-size: x-large;
   font-family: "华文中宋";
@@ -91,7 +91,39 @@ nav .nav-box {
   display: none;
   position: absolute;
   flex-direction: column;
+}*/
+
+nav {
+  height: 40px;
+  font-size: 20px;
+  font-family: "华文中宋";
+  background-color: rgb(120, 41, 120);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 30px;
+  font-weight: bold;
+  color: white;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
+nav .nav-box {
+  width: 200px;
+
+}
+.drop-content {
+  width: 160px;
+  margin-left: 20px;
+  background-color: rgb(120, 41, 120);
+  display: none;
+  position: absolute;
+  flex-direction: column;
+}
+
+
 .drop-content a {
   width: 160px;
   margin-top: 10px;
@@ -116,10 +148,10 @@ nav .nav-box {
   }
 }
 .home_header {
-  color: white;
-  background-color: rgb(95, 5, 95);
+  background-image: url('./assets/题头2.png');
+  background-size: 100%;
   width: 100%;
-  height: 50px;
+  height: 140px;
   display: flex;
 }
 
@@ -136,7 +168,7 @@ nav .nav-box {
   align-items: center;
   display: flex;
   font-family: "华文中宋";
-  margin-top: 35px;
+  /*margin-top: 35px;*/
   width: 100%;
   height: 200px;
   color: white;
@@ -147,7 +179,7 @@ nav .nav-box {
   }
 }
 .links {
-  width: 12%;
+  width: 13%;
   display: flex;
   flex-direction: column;
   a {
