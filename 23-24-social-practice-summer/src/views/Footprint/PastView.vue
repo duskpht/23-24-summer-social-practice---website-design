@@ -94,7 +94,6 @@
   background-color: rgb(120, 41, 120);
 }
 .nav-index a {
-  margin-top: 10px;
   text-decoration: none;
   text-align: center;
   color: white;
