@@ -9,7 +9,7 @@
       </el-container>
       <el-container class="nav-box">
         <div class="dropdown">
-          <div class="drop-text">调研风采</div>
+          <router-link to="/research/nanjing">调研风采</router-link>
           <div class="drop-content">
             <router-link to="/research/nanjing">南京</router-link>
             <router-link to="/research/jiujiang">九江</router-link>
@@ -22,7 +22,7 @@
       </el-container>
       <el-container class="nav-box">
         <div class="dropdown">
-          <div class="drop-text">调研结果</div>
+          <router-link to="/result/regional">调研结果</router-link>
           <div class="drop-content">
             <router-link to="/result/regional">地域风物</router-link>
             <router-link to="/result/history">口述历史</router-link>
