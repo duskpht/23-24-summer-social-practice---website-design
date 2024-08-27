@@ -158,7 +158,6 @@
   margin-top: 0px;
   width: 1000px;
   height: 340px;
-  
 }
 .image1 {
   display: flex;
@@ -181,7 +180,7 @@
   height: 450px;
   justify-content: center;
   text-indent: 2em; 
-  white-space: pre-wrap;
+
 }
 
 .image-container2{
@@ -217,7 +216,7 @@
   font-family: "华文中宋";
   font-size: 20px;
   text-indent: 2em; 
-  white-space: pre-wrap;  
+
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -270,7 +269,7 @@
   color:azure;
   font-size: 20px;
   text-indent: 2em; 
-  white-space: pre-wrap;  
+
   display: flex;
   flex-direction: column;
   width: 800px;

@@ -32,7 +32,15 @@
         </div>
       </el-container>
       <el-container class="nav-box">
-        <router-link to="/footprint">西迁足迹</router-link>
+        <div class="dropdown">
+          <router-link to="/footprint/intro">西迁印迹</router-link>
+          <div class="drop-content">
+            <router-link to="/footprint/intro">简介</router-link>
+            <router-link to="/footprint/past">溯往</router-link>
+            <router-link to="/footprint/today">忆今</router-link>
+            <router-link to="/footprint/inspiration">感悟</router-link>
+          </div>
+        </div>
       </el-container>
       <el-container class="nav-box">
         <router-link to="/memory">我的记忆</router-link>
@@ -68,7 +76,7 @@ export default {
   height: 70px;
   font-size: x-large;
   font-family: "华文中宋";
-  background-color: purple;
+  background-color: rgb(120, 41, 120);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,7 +95,7 @@ nav .nav-box {
 .drop-content { 
   width: 160px;
   margin-left: 20px;
-  background-color: purple;
+  background-color: rgb(120, 41, 120);
   display: none;
   position: absolute;
   flex-direction: column;
@@ -98,6 +106,7 @@ nav {
   font-size: 20px;
   font-family: "华文中宋";
   background-color: rgb(120, 41, 120);
+  line-height: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -126,7 +135,8 @@ nav .nav-box {
 
 .drop-content a {
   width: 160px;
-  margin-top: 10px;
+  /*margin-top: 5px;
+  margin-bottom: 5px;*/
 }
 .drop-content a:hover {
   background: black;
@@ -155,13 +165,6 @@ nav .nav-box {
   display: flex;
 }
 
-.header_title {
-  margin-left: 20px;
-  margin-top: 5px;
-  font-size: x-large;
-  font-weight: bold;
-  font-family: "华文中宋";
-}
 .link {
   font-size: large;
   justify-content: center;
@@ -172,7 +175,7 @@ nav .nav-box {
   width: 100%;
   height: 200px;
   color: white;
-  background-color: purple;
+  background-color: rgb(120, 41, 120);
   a {
     text-decoration: none;
     color: white;

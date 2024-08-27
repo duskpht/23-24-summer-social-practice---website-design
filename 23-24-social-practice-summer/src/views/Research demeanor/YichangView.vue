@@ -67,19 +67,18 @@
 }
 .nav-index {
   position: fixed;
-
   margin-top: 30px;
   font-family: "华文中宋";
-  font-size: large;
+  font-size: 20px;
+  line-height: 2;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   width: 150px;
-  height: 210px;
-  background-color: purple;
+  height: 240px;
+  background-color: rgb(120, 41, 120);
 }
 .nav-index a {
-  margin-top: 10px;
   text-decoration: none;
   text-align: center;
   color: white;
@@ -94,7 +93,7 @@ a:hover {
   align-items: center;
 }
 .content h2 {
-  color: purple;
+  color: rgb(120, 41, 120);
   text-align: center;
 }
 .pic img {

@@ -248,7 +248,7 @@ p {
   margin-right: 30px;
   align-items: center;
   justify-content: center;
-  background-color: purple;
+  background-color: rgb(120, 41, 120);
 }
 .map-nav button {
   margin-top: 15px;

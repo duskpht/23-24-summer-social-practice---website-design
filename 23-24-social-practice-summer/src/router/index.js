@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 //import HomeView from '../views/HomeView.vue'
 const MainView = () => import("../views/MainView.vue");
-const FootprintView = () => import("../views/FootprintView.vue");
 const MemoryView = () => import("../views/MemoryView.vue");
 const ResearchNanjingView = () =>
   import("../views/Research demeanor/NanjingView.vue");
@@ -23,6 +22,16 @@ const ResultHistoryView = () =>
   import("../views/Research result/HistoryView.vue");
 const ResultArchivelView = () =>
   import("../views/Research result/ArchiveView.vue");
+const FootprintIntroView = () =>
+  import("../views/Footprint/IntroView.vue");
+const FootprintPastView = () =>
+  import("../views/Footprint/PastView.vue");
+const FootprintTodayView = () =>
+  import("../views/Footprint/TodayView.vue");
+const FootprintInspirationView = () =>
+  import("../views/Footprint/InspirationView.vue");
+
+
 const routes = [
   {
     path: "/",
@@ -69,8 +78,20 @@ const routes = [
     component: ResultHistoryView,
   },
   {
-    path: "/footprint",
-    component: FootprintView,
+    path: "/footprint/intro",
+    component: FootprintIntroView,
+  },
+  {
+    path: "/footprint/past",
+    component: FootprintPastView,
+  },
+  {
+    path: "/footprint/today",
+    component: FootprintTodayView,
+  },
+  {
+    path: "/footprint/Inspiration",
+    component: FootprintInspirationView,
   },
   {
     path: "/memory",
