@@ -1,7 +1,11 @@
 <template>
   <div class="app">
     <div class="home_header">
-      
+      <img
+          src="./assets/题头2.png"
+          alt="header"
+          style="width: 100%"
+        />
     </div>
     <nav>
       <el-container class="nav-box">
@@ -161,7 +165,7 @@ nav .nav-box {
   background-image: url('./assets/题头2.png');
   background-size: 100%;
   width: 100%;
-  height: 140px;
+  height: auto;
   display: flex;
 }
 

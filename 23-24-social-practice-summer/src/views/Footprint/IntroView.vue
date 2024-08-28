@@ -61,7 +61,7 @@ a:hover {
     justify-content: center;
     margin: 0 auto;  /*在父容器内水平居中*/ 
 
-    width: 1050px;
+    width: 82%;
     height: 700px;
 }
 
@@ -78,7 +78,7 @@ a:hover {
   flex-direction: column;
   margin-left: 120px;
   margin-right: 30px;
-  width: 750px;
+  width: 71%;
   height: 450px;
   justify-content: center;
   text-indent: 2em; 

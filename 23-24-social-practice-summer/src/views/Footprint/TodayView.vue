@@ -105,7 +105,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin: 0 auto;  /*在父容器内水平居中*/ 
-    width: 1080px;
+    width: 81%;
     height: 790px;
     margin-bottom: 50px;
 }
@@ -117,7 +117,7 @@ a:hover {
     font-size: 18px;
     margin-left: 120px;
     margin-right: 45px;
-    width: 750px;
+    width: 70%;
     height: 450px;
 }
 .text1{

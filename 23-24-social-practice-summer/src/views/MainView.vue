@@ -113,6 +113,7 @@
       </el-container>
     </el-container>
     <h2>西迁简介</h2>
+    <el-container class="container">
     <el-container class="propagation">
       <el-container class="pic-link">
         <img
@@ -166,6 +167,7 @@
       </el-container>
     </el-container>
     <h2>宣传链接</h2>
+    </el-container>
   </div>
 </template>
 
@@ -293,7 +295,7 @@ p {
   margin: 0 auto;
   margin-top: 30px;
   width: 80%;
-  height: 500px;
+  height: 580px;
 }
 .pic-link,
 .text-link {
@@ -341,5 +343,11 @@ h2 {
   font-family: "华文中宋";
   font-size: x-large;
   text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 水平居中对齐 */
+    justify-content: center; /* 垂直居中对齐 */
 }
 </style>

@@ -156,7 +156,7 @@
   justify-content: center;
   margin: 0 auto;  /*在父容器内水平居中*/ 
   margin-top: 0px;
-  width: 1000px;
+  width: 76%;
   height: 340px;
 }
 .image1 {
@@ -175,7 +175,7 @@
   font-family: "华文中宋";
   font-size: 20px;
   flex-direction: column;
-  margin-left: 60px;
+  margin-left: 50px;
   width: 420px;
   height: 450px;
   justify-content: center;
@@ -189,7 +189,7 @@
   justify-content: center;
   margin: 0 auto;  /*在父容器内水平居中*/ 
   margin-top: 10px;
-  width: 1000px;
+  width: 76%;
   height: 250px;
 }
 .image2 {
@@ -207,7 +207,7 @@
   justify-content: center;
   margin: 0 auto;  /*在父容器内水平居中*/ 
   margin-top: 150px;
-  width: 1000px;
+  width: 76%;
   height: 200px;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -232,10 +232,10 @@
   justify-content: center;
   margin: 0 auto;  /*在父容器内水平居中*/ 
   margin-top: 150px;
-  width: 1150px;
+  width: 88%;
   height: 425px;
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .text-container4{
   display: flex;
@@ -243,7 +243,7 @@
   justify-content: center;
   margin: 0 auto;  /*在父容器内水平居中*/ 
   margin-top: 150px;
-  width: 1150px;
+  width: 88%;
   height: 635px;
   margin-top: 20px;
   margin-bottom: 30px;

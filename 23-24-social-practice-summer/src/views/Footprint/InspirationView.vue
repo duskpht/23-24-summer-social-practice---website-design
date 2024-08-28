@@ -63,19 +63,18 @@ a:hover {
   color: black;
 }
 .text_container{
-    border: 1px solid;
+    /*border: 1px solid;*/
     display: flex;
     flex-direction: column; /* 垂直排列 */
     align-items: flex-end; /* 水平居右对齐 */
     justify-content: center; /* 垂直居中对齐 */
     font-size: 18px;
-    margin-left: 300px;
+    margin-left: 19%;
     margin-right: auto;
-    width: 1100px;
-    height: 1020px;
+    width: 73%;
+    height: 900px;
 }
 .text1{
-    border: 1px solid;
     display: flex;
     /*margin-top: 10px;*/
     font-family: "华文中宋";
