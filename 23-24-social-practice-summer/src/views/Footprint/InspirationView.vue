@@ -63,6 +63,7 @@ a:hover {
   color: black;
 }
 .text_container{
+    border: 1px solid;
     display: flex;
     flex-direction: column; /* 垂直排列 */
     align-items: flex-end; /* 水平居右对齐 */
@@ -70,10 +71,11 @@ a:hover {
     font-size: 18px;
     margin-left: 300px;
     margin-right: auto;
-    width: 750px;
+    width: 1100px;
     height: 1020px;
 }
 .text1{
+    border: 1px solid;
     display: flex;
     /*margin-top: 10px;*/
     font-family: "华文中宋";

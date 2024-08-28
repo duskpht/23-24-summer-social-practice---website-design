@@ -13,7 +13,7 @@
         <h3>宜昌站·金陵大学</h3>
         <p>“凝碧初高海气秋，桂轮斜落到江楼”</p>
         <p>
-          宜昌地处长江三峡西陵峡口，通连巴蜀与荆襄，素有“川鄂咽暖”之称，历来是兵家必争之地。1937年全面抗战开始后，宜昌作为四川抗战基地的东大门，是中央政府与厂矿企业、教育机构西迁人员和物资的要道。
+          宜昌地处长江三峡西陵峡口，通连巴蜀与荆襄，素有“川鄂咽喉”之称，历来是兵家必争之地。1937年全面抗战开始后，宜昌作为四川抗战基地的东大门，是中央政府与厂矿企业、教育机构西迁人员和物资的要道。
         </p>
         <img
           src="../../assets/presentationView/宜昌/宜昌市档案馆保存《抗战记忆》封面.png"
@@ -74,7 +74,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  width: 150px;
+  width: 10%;
   height: 240px;
   background-color: rgb(120, 41, 120);
 }
@@ -88,8 +88,8 @@ a:hover {
   color: black;
 }
 .content {
-  margin-left: 300px;
-  width: 1100px;
+  margin-left: 20%;
+  width: 73.33%;
   align-items: center;
 }
 .content h2 {
@@ -105,10 +105,10 @@ a:hover {
 }
 .pic p {
   text-indent: 2em;
-  font-size: 30px;
+  font-size: 25px;
 }
 .pic h3 {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 </style>

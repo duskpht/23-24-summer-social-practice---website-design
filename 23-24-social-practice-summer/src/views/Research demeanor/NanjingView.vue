@@ -68,7 +68,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  width: 150px;
+  width: 10%;
   height: 240px;
   background-color: rgb(120, 41, 120);
 }
@@ -82,8 +82,8 @@ a:hover {
   color: black;
 }
 .content {
-  margin-left: 300px;
-  width: 1100px;
+  margin-left: 20%;
+  width: 73.33%;
   align-items: center;
 }
 .content h2 {
@@ -99,10 +99,10 @@ a:hover {
 }
 .pic p {
   text-indent: 2em;
-  font-size: 30px;
+  font-size: 25px;
 }
 .pic h3 {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 </style>

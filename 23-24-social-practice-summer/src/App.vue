@@ -124,7 +124,7 @@ nav .nav-box {
 
 }
 .drop-content {
-  width: 160px;
+  width:160px ;
   margin-left: 20px;
   background-color: rgb(120, 41, 120);
   display: none;

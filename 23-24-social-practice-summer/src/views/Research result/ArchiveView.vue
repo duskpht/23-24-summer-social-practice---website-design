@@ -15,19 +15,19 @@
       <el-table :data="JinLingData" class="table">
         <el-table-column prop="account" label="档案号" width="350px" />
         <el-table-column prop="name" label="题名" width="600px" />
-        <el-table-column prop="date" label="日期" width="200px" />
+        <el-table-column prop="date" label="日期" width="150px" />
       </el-table>
       <h2>金陵大学部分档案</h2>
       <el-table :data="ZhongyangData" class="table">
         <el-table-column prop="account" label="档案号" width="350px" />
         <el-table-column prop="name" label="题名" width="600px" />
-        <el-table-column prop="date" label="日期" width="200px" />
+        <el-table-column prop="date" label="日期" width="150px" />
       </el-table>
       <h2>国立中央大学部分档案</h2>
       <el-table :data="SichuanData" class="table">
         <el-table-column prop="account" label="档案号" width="350px" />
         <el-table-column prop="name" label="题名" width="600px" />
-        <el-table-column prop="date" label="日期" width="200px" />
+        <el-table-column prop="date" label="日期" width="150px" />
       </el-table>
       <h2>四川省农改所部分档案</h2>
     </el-container>
@@ -616,7 +616,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  width: 150px;
+  width: 10%;
   height: 160px;
   background-color: rgb(120, 41, 120);
 }
@@ -630,9 +630,10 @@ a:hover {
   color: black;
 }
 .content {
-  margin-left: 300px;
-  width: 1100px;
+  margin-left: 20%;
+  width: 73.33%;
   align-items: center;
+
 }
 .content h2 {
   color: rgb(120, 41, 120);
@@ -654,7 +655,7 @@ a:hover {
 }
 .his-word {
   margin-top: 30px;
-  width: 1000px;
+  width: 90%;
   height: 150px;
   border: 1px solid;
   background-image: url("../../assets/historyDictation/2.png");

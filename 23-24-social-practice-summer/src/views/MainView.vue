@@ -215,7 +215,7 @@ export default {
 }
 .uni-pic {
   margin: 40px;
-  width: 280px;
+  width: 18.67%;
   height: 420px;
 }
 .uni-word {
@@ -223,7 +223,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 40px;
-  margin-left: 50px;
+  margin-left: 3.33%;
   height: 400px;
   width: 62%;
 }
@@ -292,15 +292,15 @@ p {
   justify-content: center;
   margin: 0 auto;
   margin-top: 30px;
-  width: 1200px;
+  width: 80%;
   height: 500px;
 }
 .pic-link,
 .text-link {
   display: flex;
   flex-direction: column;
-  margin: 30px;
-  width: 350px;
+  margin: 2.5%;
+  width: 29.17%;
   height: 440px;
 }
 .pic-link img {

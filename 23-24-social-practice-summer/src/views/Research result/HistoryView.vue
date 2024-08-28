@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  width: 150px;
+  width: 10%;
   height: 160px;
   background-color: rgb(120, 41, 120);
 }
@@ -59,8 +59,8 @@ a:hover {
   color: black;
 }
 .content {
-  margin-left: 300px;
-  width: 1100px;
+  margin-left: 20%;
+  width: 73.33%;
   align-items: center;
 }
 .content h2 {
@@ -69,7 +69,7 @@ a:hover {
 }
 .his-word {
   margin-top: 30px;
-  width: 1000px;
+  width: 91%;
   height: 200px;
   border: 1px solid;
   background-image: url("../../assets/historyDictation/2.png");

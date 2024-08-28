@@ -172,8 +172,8 @@
   line-height: 2;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  width: 150px;
+  margin-left: 1.33%;
+  width: 10%;
   height: 160px;
   background-color: rgb(120, 41, 120);
 }
@@ -187,8 +187,8 @@ a:hover {
   color: black;
 }
 .content {
-  margin-left: 300px;
-  width: 1100px;
+  margin-left: 20%;
+  width: 73.33%;
   align-items: center;
 }
 .content h2 {
@@ -213,7 +213,7 @@ a:hover {
   justify-content: center;
   margin: 0 auto;
   margin-top: 30px;
-  width: 1000px;
+  width: 91%;
   height: 700px;
 }
 .comparison {
@@ -238,7 +238,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   margin: 30px;
-  width: 300px;
+  width: 30%;
   height: 450px;
 }
 .text-link {
