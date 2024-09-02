@@ -1,10 +1,34 @@
 <template>
   <div class="all">
-    <img
-      src="../assets/mainView/main-pic/标题.png"
-      alt="重走西迁路"
-      class="main-pic"
-    />
+    <el-contaienr class="carousel">
+      <el-container class="carousel-pic" v-if="pic_index == 0">
+        <img
+          src="../assets/mainView/main-pic/标题.png"
+          alt="标题"
+        />
+      </el-container>
+      <el-container class="carousel-pic" v-if="pic_index == 1">
+        <img
+          src="../assets/mainView/main-pic/大礼堂照片.png"
+          alt="大礼堂照片"
+        />
+      </el-container>
+      <el-container class="carousel-pic" v-if="pic_index == 2">
+        <img src="../assets/mainView/main-pic/宜昌-18.jpg" alt="宜昌-18" />
+      </el-container>
+      <el-container class="carousel-pic" v-if="pic_index == 3">
+        <img src="../assets/mainView/main-pic/宜昌-21.jpg" alt="宜昌-21" />
+      </el-container>
+      <el-container class="carousel-pic" v-if="pic_index == 4">
+        <img
+          src="../assets/mainView/main-pic/中山码头远景.png"
+          alt="中山码头远景"
+        />
+      </el-container>
+      <el-container class="carousel-pic" v-if="pic_index == 5">
+        <img src="../assets/mainView/main-pic/合照.jpg" alt="合照" />
+      </el-container>
+    </el-contaienr>
     <el-container class="uni-history">
       <el-container class="uni-pic">
         <img
@@ -114,59 +138,59 @@
     </el-container>
     <h2>西迁简介</h2>
     <el-container class="container">
-    <el-container class="propagation">
-      <el-container class="pic-link">
-        <img
-          src="../assets/mainView/propagation/三峡日报.png"
-          alt="三峡日报"
-          style="height: 200px"
-        />
-        <h2>“金陵大学西迁”调研活动走进宜昌——三峡日报</h2>
-        <a
-          href="https://nginx-sxrmtzx.sxrmapp.cn3x.com.cn/sxrmtzx/site1/mweb/202408/19/c661800.html"
-          >三峡日报</a
-        >
+      <el-container class="propagation">
+        <el-container class="pic-link">
+          <img
+            src="../assets/mainView/propagation/三峡日报.png"
+            alt="三峡日报"
+            style="height: 200px"
+          />
+          <h2>“金陵大学西迁”调研活动走进宜昌——三峡日报</h2>
+          <a
+            href="https://nginx-sxrmtzx.sxrmapp.cn3x.com.cn/sxrmtzx/site1/mweb/202408/19/c661800.html"
+            >三峡日报</a
+          >
+        </el-container>
+        <el-container class="pic-link">
+          <img
+            src="../assets/mainView/propagation/重庆晨报.png"
+            alt="重庆晨报"
+            style="height: 200px"
+          />
+          <h2>南京大学学生再走“西迁路” 感悟“西迁”光辉史——重庆晨报</h2>
+          <a href="https://chinacqsb.com/">重庆日报</a>
+        </el-container>
+        <el-container class="text-link">
+          <a href="https://mp.weixin.qq.com/s/qroIb4FtbFXA1G6CURXkTA"
+            >向西•古都启程 | 中山码头：风雨飘摇之际的温情港湾</a
+          >
+          <a href="https://mp.weixin.qq.com/s/WDPugPPtm1yXam2_yPy6LA"
+            >向西•江畔停泊|九江：长江之畔的文化驿站</a
+          >
+          <a href="https://mp.weixin.qq.com/s/-GIMocnQvmDUHb4UvBrx8A"
+            >向西•江城记忆 | 武汉：楚汉风韵与江城变迁</a
+          >
+          <a href="https://mp.weixin.qq.com/s/36203Yk_nzuELR_5eDIrDQ"
+            >向西•东方的敦刻尔克大撤退 | 宜昌：险象环生的川鄂门户</a
+          >
+          <a href="https://mp.weixin.qq.com/s/_uHPxlTuWEU6SIw5Pz457A"
+            >向西•山城灯火(上) | 重庆：立体都市的社会实践画卷</a
+          >
+          <a href="https://mp.weixin.qq.com/s/01TKEzBx2Nn7AjmN5VBvbQ"
+            >向西•山城灯火(中) |
+            寻根问脉，共话时代：南京大学学子在重庆大学重温西迁精神</a
+          >
+          <a href="https://mp.weixin.qq.com/s/mp6o2QpSv8xnNldUaPjSIQ"
+            >向西•山城灯火(下) |
+            穿越时光的航迹：南京大学学子探寻民生公司与西迁记忆</a
+          >
+          <a href="https://mp.weixin.qq.com/s/K6ctvN_DH9bQjAB1cak5-A"
+            >向西•天府之国 | 成都：慢生活下的社会实践探索</a
+          >
+          <h2>公众号链接</h2>
+        </el-container>
       </el-container>
-      <el-container class="pic-link">
-        <img
-          src="../assets/mainView/propagation/重庆晨报.png"
-          alt="重庆晨报"
-          style="height: 200px"
-        />
-        <h2>南京大学学生再走“西迁路” 感悟“西迁”光辉史——重庆晨报</h2>
-        <a href="https://chinacqsb.com/">重庆日报</a>
-      </el-container>
-      <el-container class="text-link">
-        <a href="https://mp.weixin.qq.com/s/qroIb4FtbFXA1G6CURXkTA"
-          >向西•古都启程 | 中山码头：风雨飘摇之际的温情港湾</a
-        >
-        <a href="https://mp.weixin.qq.com/s/WDPugPPtm1yXam2_yPy6LA"
-          >向西•江畔停泊|九江：长江之畔的文化驿站</a
-        >
-        <a href="https://mp.weixin.qq.com/s/-GIMocnQvmDUHb4UvBrx8A"
-          >向西•江城记忆 | 武汉：楚汉风韵与江城变迁</a
-        >
-        <a href="https://mp.weixin.qq.com/s/36203Yk_nzuELR_5eDIrDQ"
-          >向西•东方的敦刻尔克大撤退 | 宜昌：险象环生的川鄂门户</a
-        >
-        <a href="https://mp.weixin.qq.com/s/_uHPxlTuWEU6SIw5Pz457A"
-          >向西•山城灯火(上) | 重庆：立体都市的社会实践画卷</a
-        >
-        <a href="https://mp.weixin.qq.com/s/01TKEzBx2Nn7AjmN5VBvbQ"
-          >向西•山城灯火(中) |
-          寻根问脉，共话时代：南京大学学子在重庆大学重温西迁精神</a
-        >
-        <a href="https://mp.weixin.qq.com/s/mp6o2QpSv8xnNldUaPjSIQ"
-          >向西•山城灯火(下) |
-          穿越时光的航迹：南京大学学子探寻民生公司与西迁记忆</a
-        >
-        <a href="https://mp.weixin.qq.com/s/K6ctvN_DH9bQjAB1cak5-A"
-          >向西•天府之国 | 成都：慢生活下的社会实践探索</a
-        >
-        <h2>公众号链接</h2>
-      </el-container>
-    </el-container>
-    <h2>宣传链接</h2>
+      <h2>宣传链接</h2>
     </el-container>
   </div>
 </template>
@@ -175,10 +199,14 @@
 export default {
   data() {
     return {
+      pic_index:0,
       isVisible: [true, false, false, false, false, false],
     };
   },
   methods: {
+    nextPic() {
+      this.pic_index = (this.pic_index+1) % 6;
+    },
     getMessage(index) {
       for (let x = 0; x < 6; x++) {
         if (index == x) {
@@ -189,6 +217,15 @@ export default {
       }
     },
   },
+  mounted(){
+    this.intervalId = setInterval(this.nextPic,3000);
+  },
+  beforeUnmounted(){
+    if(this.intervalId){
+      clearInterval(this.intervalId);  
+      this.intervalId = null;  
+    }
+  }
 };
 </script>
 
@@ -205,6 +242,17 @@ export default {
   margin-right: 15%;
   height: 500px;
   width: 70%;
+}
+.carousel-pic {
+  margin-left: 15%;
+  width: 70%;
+  height: 500px;
+  margin-top: 15px;
+}
+.carousel-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .uni-history {
   display: flex;
@@ -344,10 +392,10 @@ h2 {
   font-size: x-large;
   text-align: center;
 }
-.container{
-    display: flex;
-    flex-direction: column; /* 垂直排列 */
-    align-items: center; /* 水平居中对齐 */
-    justify-content: center; /* 垂直居中对齐 */
+.container {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 水平居中对齐 */
+  justify-content: center; /* 垂直居中对齐 */
 }
 </style>
