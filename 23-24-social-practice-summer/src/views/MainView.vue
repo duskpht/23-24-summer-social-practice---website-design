@@ -44,27 +44,26 @@
       </el-container>
     </el-container>
     <h2>南大校史</h2>
-    <img
+
+   <!-- 
+   <img
       src="../assets/mainView/introduction/中国（部分）.png"
       alt="部分中国地图"
       class="china-map"
-    />
-    <h2>西迁路线图(待补充)</h2>
+    /> 
+    -->
+   
+    <div ref="chartContainer" 
+    style=" height: 500px; margin-top: 30px; justify-content: center; margin-left: 5%; margin-right: 5%; ">
+    </div>
+
     <el-container class="introduction">
-      <el-container class="map-nav">
-        <el-button @click="getMessage(0)" type="primary"> 南京 </el-button>
-        <el-button @click="getMessage(1)" type="primary"> 九江 </el-button>
-        <el-button @click="getMessage(2)" type="primary"> 武汉 </el-button>
-        <el-button @click="getMessage(3)" type="primary"> 宜昌 </el-button>
-        <el-button @click="getMessage(4)" type="primary"> 重庆 </el-button>
-        <el-button @click="getMessage(5)" type="primary"> 成都 </el-button>
-      </el-container>
       <el-container class="map">
         <el-container class="concrete-content" v-if="isVisible[0]">
           <img
             src="../assets/mainView/introduction/南京.jpg"
             alt="南京"
-            style="height: 100%"
+            style="width: 100%; align-items: center; justify-content: center;"
           />
         </el-container>
         <el-container class="concrete-content" v-if="isVisible[1]">
@@ -136,7 +135,8 @@
         </el-container>
       </el-container>
     </el-container>
-    <h2>西迁简介</h2>
+    <h2>西迁路线简介</h2>
+
     <el-container class="container">
       <el-container class="propagation">
         <el-container class="pic-link">
@@ -196,6 +196,7 @@
 </template>
 
 <script>
+/* global echarts */
 export default {
   data() {
     return {
@@ -216,16 +217,179 @@ export default {
         }
       }
     },
+  
+
+  initECharts() {
+      if (typeof echarts === "undefined") {
+        console.error("ECharts is not loaded! Make sure you have included it in index.html.");
+        return;
+      }
+
+      const chartRef = this.$refs.chartContainer;
+      this.chartInstance = echarts.init(chartRef);
+
+      const option = {
+        animation: true,
+        series: [
+          {
+            type: "lines",
+            name: "flows",
+            coordinateSystem: "geo",
+            zlevel: 2,
+            effect: {
+              show: true,
+              brushType: "stroke",
+              scale: 2.5,
+              period: 3,
+              color: "#ffffff",   //箭头颜色
+              symbol: "arrow",
+              symbolSize: 10,
+            },
+            symbol: ["none", "arrow"],
+            lineStyle: {
+              width: 1.5,
+              opacity: 0.6,
+              curveness: 0.2,
+              color: "#ffffff",  //线的颜色
+            },
+            data: [
+              { name: "南京->九江", coords: [[118.7915, 32.0615], [115.9475, 29.6654]] },
+              { name: "九江->武汉", coords: [[115.9475, 29.6654], [114.2654, 30.6041]] },
+              { name: "武汉->宜昌", coords: [[114.2654, 30.6041], [111.2811, 30.6947]] },
+              { name: "宜昌->重庆", coords: [[111.2811, 30.6947], [106.5479, 29.5647]] },
+              { name: "重庆->成都", coords: [[106.5479, 29.5647], [104.0667, 30.6667]] },
+            ],
+          },
+          {
+            type: "effectScatter",
+            coordinateSystem: "geo",
+            zlevel: 3,
+            showEffectOn: "render",
+            rippleEffect: {
+              scale: 2.5,
+              period: 4,
+            },
+            symbolSize: 12,
+            data: [
+              { name: "南京", value: [118.7915, 32.0615, 10] },
+              { name: "九江", value: [115.9475, 29.6654, 20] },
+              { name: "武汉", value: [114.2654, 30.6041, 30] },
+              { name: "宜昌", value: [111.2811, 30.6947, 40] },
+              { name: "重庆", value: [106.5479, 29.5647, 50] },
+              { name: "成都", value: [104.0667, 30.6667, 60] },
+            ],
+            label: {
+              show: true,
+              position: "right",
+              formatter: "{b}",
+            },
+            itemStyle: {
+              color: "#c48f57",  // 圆圈颜色
+              borderColor: "black",
+              borderWidth: 1,
+            },
+          },
+        ],
+        tooltip: {
+          show: true,
+          trigger: "item",
+          formatter: (params) => {
+            if (params.seriesType === "effectScatter") {
+              return `${params.name} : ${params.value[2]}`;
+            }
+            return params.name;
+          },
+        },
+        title: {
+          text: "",
+          left: "center",
+        },
+        geo: {
+          map: "china",
+          roam: true,
+          zoom: 3,
+          itemStyle: {
+            areaColor: "#f0f0f0",  // 设置所有区域的默认填充颜色
+          },
+          emphasis: {
+            itemStyle: {
+              areaColor: "rgba(0, 0, 0, 0)" ,  // 设置所有区域鼠标悬停时的颜色
+            },
+          },
+
+          regions: [
+          {
+            name: "江苏省", 
+            itemStyle: {
+              areaColor: "#ffd957",  
+            },
+          },
+          {
+            name: "湖北省", 
+            itemStyle: {
+              areaColor: "#ffd957",  
+            },
+          },
+          {
+            name: "重庆市", 
+            itemStyle: {
+              areaColor: "#ffd957",  
+            },
+          },
+          {
+            name: "江西省", 
+            itemStyle: {
+              areaColor: "#ffd957",  
+            },
+          },
+          {
+            name: "四川省", 
+            itemStyle: {
+              areaColor: "#ffd957",  
+            },
+          },
+          {
+            name: "安徽省", 
+            itemStyle: {
+              areaColor: "#ffd957",  
+            },
+          },
+
+        ]
+        },
+      };
+
+      this.chartInstance.setOption(option);
+
+      // 添加地图点击事件监听
+      this.chartInstance.on("click", (params) => {
+        const cityNames = ["南京", "九江", "武汉", "宜昌", "重庆", "成都"];
+        const index = cityNames.indexOf(params.name);
+        if (index !== -1) {
+          this.getMessage(index);
+        }
+      });
+    },
   },
-  mounted(){
-    this.intervalId = setInterval(this.nextPic,3000);
+  
+  mounted() {
+    this.intervalId = setInterval(this.nextPic, 3000);
+    
+    this.$nextTick(() => {
+      this.initECharts(); //  确保 `initECharts` 存在
+    });
   },
-  beforeUnmounted(){
-    if(this.intervalId){
-      clearInterval(this.intervalId);  
-      this.intervalId = null;  
+  beforeUnmount() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+      this.intervalId = null;
     }
-  }
+    if (this.chartInstance) {
+      this.chartInstance.dispose();
+      this.chartInstance = null;
+    }
+  },
+
 };
 </script>
 
@@ -287,54 +451,44 @@ p {
 }
 .introduction {
   display: flex;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 10%;
   margin-right: 10%;
   height: 400px;
   width: 80%;
-}
-.map-nav {
-  width: 90px;
-  margin-right: 30px;
   align-items: center;
   justify-content: center;
-  background-color: rgb(120, 41, 120);
 }
-.map-nav button {
-  margin-top: 15px;
-  margin-left: 10px;
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  line-height: 50px;
-  text-align: center;
-  font-size: 16px;
-  font-family: "华文中宋";
-}
+
 .map {
   width: 70%;
   height: 100%;
-  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
 }
 .result {
   background-image: url("../assets/historyDictation/8.png");
   background-size: cover;
-  margin-left: 15px;
-  margin-right: 0;
   width: 33%;
   height: 100%;
   color: black;
+  align-items: center;
+  justify-content: center;
 }
 
 .concrete-content {
   width: 100%;
   height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .concrete-content p {
   align-items: center;
   justify-content: center;
   font-size: 22px;
+  align-items: center;
+  justify-content: center;
 }
 .propagation {
   display: flex;
@@ -383,10 +537,7 @@ a {
   text-align: center;
   margin: 30px;
 }
-.china-map {
-  margin-top: 30px;
-  margin-left: 10%;
-}
+
 h2 {
   font-family: "华文中宋";
   font-size: x-large;
@@ -397,5 +548,10 @@ h2 {
   flex-direction: column; /* 垂直排列 */
   align-items: center; /* 水平居中对齐 */
   justify-content: center; /* 垂直居中对齐 */
+}
+#chartContainer {
+  position: relative;
+  height: 500px;
+  margin-top: 30px;
 }
 </style>
